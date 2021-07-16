@@ -7,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Music Genres</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
-    <body style="padding: 0; margin: 0; width: 100%;">
+    <body>
         <header>
             <div class="bimg1">
                 <div class="btext">
@@ -17,18 +18,18 @@
                     </span>
                 </div>
             </div>
-            <section style="background-color: rgb(80, 80, 80);">
-                <table cellspacing="50" style="color: #fff;">
+            <section>
+                <table style="color: #fff;">
                     <tbody style="text-align: center; vertical-align: center;">
                         <tr>
                             <td>
-                                <img height="150" src="img/music.png" alt="Music Notes"/>
+                                <img style="height: 11.71875vw;" src="img/music.png" alt="Music Notes"/>
                             </td>
                             <td>
-                                <p><big>Music is an eclectic mix of energy where vibrations and sounds come together in harmony to create a rhythm that soothes the soul like none other. This eclectic mix is categorized as belonging to a shared tradition or a set of conventions and is termed as genre. The different genres are usually based on music forms, styles and cultural influences. Of the many genres that have now come to exist, here is a list of 10 of the most popular genres.</big></p>
+                                <p><big>Music is an eclectic mix of energy where vibrations and sounds come together in harmony to create a rhythm that soothes the soul like none other. This eclectic mix is categorized as belonging to a shared tradition or a set of conventions and is termed as genre. The different genres are usually based on music forms, styles and cultural influences. Of the many genres that have now come to exist, here is a list of 10 of the most popular genres. </big> </p>                                   
                             </td>
                             <td>
-                                <img height="150" src="img/music.png" alt="Music Notes"/>
+                                <img style="height: 11.71875vw;" src="img/music.png" alt="Music Notes"/>
                             </td>
                         </tr>
                     </tbody>
@@ -40,32 +41,36 @@
             <div class="bimg2">
                 <div class="btext">
                     <span class="border trans">
-                        The Most Popular Genres
+                        <b><span id="t1"></span></b>
+                        <span class="cursor"></span>
                     </span>
                 </div>
             </div>
             <section>
-                <table cellspacing="50">
+                <table>
                     <tbody style="text-align: center; vertical-align: top;">                    
                         <tr>
                             <td>                            
-                                <a href="https://en.wikipedia.org/wiki/Pop_music" target="_blank">
-                                    <img width="200" src="img/pop.jpg" alt="Pop Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Pop_music" target="_blank" >
+                                    <img  src="img/pop.jpg" alt="Pop Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('pop')"/>
                                 </a> 
+                                <span id="pop"></span>
                                 <h3>Pop</h3>
                                 <p>Pop music is the genre of popular music that produces the most hits. Songs that become hits almost always share certain features that are sometimes called the pop-music formula. They have a good rhythm, a catchy melody, and are easy to remember and sing along to. </p>                              
                             </td>
                             <td>
                                 <a href="https://en.wikipedia.org/wiki/Folk_music" target="_blank">
-                                    <img width="200" src="img/folk.jpg" alt="Folk Music" style="border-radius: 70%;"/>
+                                    <img  src="img/folk.jpg" alt="Folk Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('folk')"/>
                                 </a> 
+                                <span id="folk"></span>
                                 <h3>Folk</h3>
                                 <p>Folk is a term used to describe all sorts of musical, oral and cultural traditions from specific regions and societies around the world. Folk comes from the German word ‘volk’ meaning ‘the people’ and folk music is often thought of as being the music belonging to ‘the people’.</p>
                             </td>
                             <td>
                                 <a href="https://en.wikipedia.org/wiki/Hip_hop_music" target="_blank">
-                                    <img width="200" src="img/rap.jpg" alt="Hip Hop Music" style="border-radius: 70%;"/>
+                                    <img  src="img/rap.jpg" alt="Hip Hop Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('hiphop')"/>
                                 </a> 
+                                <span id="hiphop"></span>
                                 <h3>Hip Hop</h3>
                                 <p>Hip-Hop music, also known as rap music, is a musical genre consisting of a stylized rhythmic music originally created by DJs isolating the percussion breaks of popular songs. Hip-Hop music commonly accompanies rapping, a rhythmic and rhyming speech that is chanted. 
                                 </p>
@@ -73,23 +78,26 @@
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Rock_music" target="_blank">
-                                    <img width="200" src="img/rock.jpg" alt="Rock Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Rock_music" target="_blank" >
+                                    <img  src="img/rock.jpg" alt="Rock Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('rock')"/>
                                 </a> 
+                                <span id="rock"></span>
                                 <h3>Rock</h3>
                                 <p>Rock music is a form of popular music that evolved from rock and roll and pop music during the mid and late 1960s. Harsher and often self-consciously more serious than its predecessors, it was initially characterized by musical experimentation and drug-related or anti-establishment lyrics.  </p>
                             </td>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Heavy_metal_music" target="_blank">
-                                    <img width="200" src="img/metal.jpg" alt="Heavy Metal Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Heavy_metal_music" target="_blank" >
+                                    <img  src="img/metal.jpg" alt="Heavy Metal Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('metal')"/>
                                 </a> 
+                                <span id="metal"></span>
                                 <h3>Heavy Metal</h3>
                                 <p>Heavy metal is a loud, aggressive style of rock music. Heavy metal songs are loud and powerful-sounding, and have strong rhythms that are repeated.</p>
                             </td>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Rhythm_and_blues" target="_blank">
-                                    <img width="200" src="img/r&b.jpg" alt="R&B Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Rhythm_and_blues" target="_blank" >
+                                    <img  src="img/r_b.jpg" alt="R&B Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('rb')"/>
                                 </a> 
+                                <span id="rb"></span>
                                 <h3>R&B</h3>
                                 <p>R&B stands for Rhythm and Blues. It is music that is rhythmic and has the soulful achings of the blues, characterized by a strong backbeat and repeated variations on syncopated instrumental phrases.</p>
                             </td>
@@ -97,22 +105,25 @@
                         <tr>
                             <td>
                                 <a href="https://en.wikipedia.org/wiki/Classical_music#:~:text=Classical%20music%20is%20art%20music,1820%20(the%20Classical%20period)." target="_blank">
-                                    <img width="200" src="img/classical.jpg" alt="Classical Music" style="border-radius: 70%;"/>
+                                    <img  src="img/classical.jpg" alt="Classical Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('classical')"/>
                                 </a> 
+                                <span id="classical"></span>
                                 <h3>Classical</h3>
                                 <p>Classical music is a very general term which normally refers to the standard music of countries in the western world. It is music that has been composed by musicians who are trained in the art of writing music (composing) and written down in music notation so that other musicians can play it.</p>
                             </td>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Country_music" target="_blank">
-                                    <img width="200" src="img/country.png" alt="Country Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Country_music" target="_blank" >
+                                    <img  src="img/country.png" alt="Country Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('country')"/>
                                 </a> 
+                                <span id="country"></span>
                                 <h3>Country</h3>
                                 <p>Country music is a style and genre of largely string-accompanied American popular music having roots in the folk music of the Southeast and cowboy music of the West, usually vocalized in simple form and harmony, and typified by melancholy ballads accompanied by acoustic instruments.</p>
                             </td>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Electronic_dance_music" target="_blank">
-                                    <img width="200" src="img/edm.jpg" alt="Electronic Dance Music" style="border-radius: 70%;"/>
+                                <a href="https://en.wikipedia.org/wiki/Electronic_dance_music" target="_blank" >
+                                    <img  src="img/edm.jpg" alt="Electronic Dance Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('edm')"/>
                                 </a> 
+                                <span id="edm"></span>
                                 <h3>EDM</h3>
                                 <p>EDM stands for electronic dance music, also known as dance music, club music, or simply dance, is a broad range of percussive electronic music genres made largely for nightclubs, raves, and festivals. There is no classical instruments involved rather it is maximum filled with electronics.</p>
                             </td>
@@ -122,9 +133,10 @@
                                 <!-- Empty cell for alignment purposes.--> 
                             </td>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Jazz" target="_blank">
-                                    <img width="200" src="img/jazz.jpg" alt="Jazz Music" style="border-radius: 70%;"/>
-                                </a> 
+                                <a href="https://en.wikipedia.org/wiki/Jazz" target="_blank" >
+                                    <img  src="img/jazz.jpg" alt="Jazz Music" style="border-radius: 70%; width: 15.625vw;" onclick="linkVisited('jazz')"/>
+                                </a>
+                                <span id="jazz"></span> 
                                 <h3>Jazz</h3>
                                 <p>Jazz music is a broad style of music characterized by complex harmony, syncopated rhythms, and a heavy emphasis on improvisation.  </p>
                             </td>
@@ -138,24 +150,27 @@
             <div class="bimg3">
                 <div class="btext">
                     <span class="border trans">
-                        There are millions of other genres that exist
+                        <b><span id="t2"></span></b>
+                        <span class="cursor"></span>
                     </span>
                 </div>
             </div>    
             <section>    
                 <center>
-                    <table cellspacing="50">
+                    <table>
                         <tbody style="text-align: center; vertical-align: top;">
                             <tr>
                                 <td>
                                     <p><h3>To listen to different genres, click on the video below.</h3></p>
-                                    <video src="vid/musicgenres.mp4" poster="img/thumbnail.jpg" controls width="500">Music Genres</video>
-                                    <h5>Source: <a href="https://www.youtube.com/watch?v=7uxF9CsxW88" target="_blank">Youtube</a></h5>
+                                    <video src="vid/musicgenres.mp4" poster="img/thumbnail.jpg" controls style="width: 39.0625vw;">Music Genres</video>
+                                    <h5>Source: <a href="https://www.youtube.com/watch?v=7uxF9CsxW88" target="_blank"  style="color: aquamarine;" onclick="linkVisited('youtube')" >Youtube</a></h5>
+                                    <span id="youtube"></span>
                                 </td>
                                 <td>
                                     <p><h3>Explore the various genres here.</h3></p>
-                                    <iframe src="https://everynoise.com/" frameborder="0" width="500" height="280">Sorry, you cannot access this website.</iframe>
-                                    <h5>Link: <a href="https://everynoise.com/" target="_blank">Every Noise at Once</a></h5>
+                                    <iframe src="https://everynoise.com/" frameborder="0" style="width: 39.0625vw; height: 21.875vw;">Sorry, you cannot access this website.</iframe>
+                                    <h5>Link: <a href="https://everynoise.com/" target="_blank" style="color: aquamarine;" onclick="linkVisited('site')">Every Noise at Once</a></h5>
+                                    <span id="site"></span>
                                 </td>
                             </tr>
                         </tbody>
@@ -167,49 +182,11 @@
             <div class="bimg4">
                 <div class="btext">
                     <span class="border trans">
-                        Genres are often subjective & controversial and some genres may overlap
+                        <b><span id="t3"></span></b>
+                        <span class="cursor"></span>
                     </span>
                 </div>
             </div>
-            <section style="background-color: #111; opacity: 0.70;">
-                <table align="center" width="100%" style="color: #fff;" cellspacing="50">
-                    <tbody style="padding: 0; margin: 0; vertical-align: top;">                                      
-                        <tr>
-                            <td style="vertical-align: top; padding-left: 1cm; padding-right: 12cm;">
-                                <form action="mailto:adithibalaji03@gmail.com" method="post" enctype="text/plain">
-                                    <p><big>Please enter your feedback here</big></p>
-                                    Name:<br/>
-                                    <input type="text" name="Name" size="16"><br/>
-                                    Date:<br/>
-                                    <input type="date" name="Date"><br/>
-                                    Feedback:<br/>
-                                    <input type="text" name="feedback" size="16"/><br/><br/>
-                                    <input type="checkbox" name="newsletter"/>Subscribe to our newsletter<br/><br/>
-                                    <input type="submit" value="Send"/>
-                                    <input type="reset" value="Reset"/>
-                                </form>
-                            </td>
-                            <td style="vertical-align: top;">
-                                <p>
-                                    <ul>
-                                        <p><big>Information Sources</big></p>
-                                        <li><a href="https://en.wikipedia.org/wiki/Music_genre" target="_blank" style="color: aquamarine;">Wikipedia</a></li>
-                                        <li><a href="https://screechhouse.com/most-popular-music-genres-ranked-top-10-best-music-genres-in-the-world-music-history-timeline/" target="_blank" style="color: aquamarine;">Screech House</a>
-                                        <li><a href="https://www.musicianwave.com/top-music-genres/" target="_blank" style="color: aquamarine;">Musician Wave</a></li>
-                                        <li><a href="https://musicmap.info/" target="_blank" style="color: aquamarine;">Music Map</a></li>
-                                    </ul>
-                                    <br/>
-                                    <ul>
-                                        <p><big>Image Source</big></p>
-                                        <li><a href="https://unsplash.com/" target="_blank" style="color: aquamarine;">Unsplash</a></li>
-                                    </ul>
-                                </p>
-                            </td>
-                        </tr>                    
-                    </tbody>                               
-                </table>    
-            </section>
-            <div class="bimg1"></div>
         </footer>
     </body>
 </html>
