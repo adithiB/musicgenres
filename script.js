@@ -1,5 +1,5 @@
 const genres = [" Pop", " Folk", " Hip Hop", " Rock", " Heavy Metal", "  R&B", " Classical", "  Country", "  EDM", " Jazz"];
-const colours = ["aquamarine", "yellow", "aquamarine", "yellow", "aquamarine", "yellow", "aquamarine", "yellow", "aquamarine", "yellow" ];
+const colours = ["aquamarine", "magenta", "coral", "lime", "violet", "cyan", "darkorange", "lightgreen", "yellow", "orangered" ];
 var speed = 70;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
