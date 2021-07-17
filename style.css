@@ -1,12 +1,18 @@
+:root {
+  --primary-color: rgba(0, 0, 0, 0.82);
+  --secondary-color: #fff;
+  --color1: rgba(0, 0, 0, 0.82);
+}
 body, html{
   font-family:"Lato", sans-serif;
-  color: #fff;
+  color:var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0%;
   margin: 0%;
 }
+
 .bimg1, .bimg2, .bimg3, .bimg4{
   position:relative;
   background-position:center;
@@ -43,25 +49,27 @@ body, html{
   text-transform:uppercase;
 }
 .btext .border{
-  background-color:rgb(0, 0, 0);
-  color:#fff;
+  background-color:var(--color1);
+  color:var(--secondary-color);
   padding:1.5625vw;
 }
 .btext .border.trans{
   background-color:transparent;
+  color: #fff;
+
 }
 table{
   border-spacing: 3.90625vw;
   border-collapse: separate;
 }
 section{
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: var(--primary-color);
 }
 .cursor{
   display: inline-block;
   width: 0.15625vw;
   height: 2.22vw;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   margin-left:  0.4vw;
   animation: blink .6s linear infinite alternate;
 }
@@ -85,4 +93,15 @@ h5 {
 }
 main img {
   box-shadow: 0 0 0.390625vw 0.390625vw rgba(155, 155, 155, 0.7);
+}
+#icon {
+  height: 1.953125vw;
+  padding: 1.5625vw 2.1875vw;
+  cursor: pointer;
+  z-index: 2;
+}
+.light {
+  --primary-color: aliceblue;
+  --secondary-color: rgb(37, 37, 37);
+  --color1: #b2e5ed;
 }

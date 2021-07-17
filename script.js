@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   printGenres();
   typingAction("There are millions of other genres that exist", "t2");
   typingAction("Genres are often subjective & controversial and some genres may overlap", "t3");
-
 });
 
 function printGenres(){
@@ -69,3 +68,4 @@ function deleteGenres(i, char_i=0){
     setTimeout(function(){deleteGenres(i, char_i);}, speed);
   }
 }
+

@@ -12,14 +12,16 @@
     <body>
         <header>
             <div class="bimg1">
+                <img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light.png" align="right" />
                 <div class="btext">
                     <span class="border">
                         Music Genres
                     </span>
                 </div>
             </div>
+            
             <section>
-                <table style="color: #fff;">
+                <table>
                     <tbody style="text-align: center; vertical-align: center;">
                         <tr>
                             <td>
@@ -163,13 +165,13 @@
                                 <td>
                                     <p><h3>To listen to different genres, click on the video below.</h3></p>
                                     <video src="vid/musicgenres.mp4" poster="img/thumbnail.jpg" controls style="width: 39.0625vw;">Music Genres</video>
-                                    <h5>Source: <a href="https://www.youtube.com/watch?v=7uxF9CsxW88" target="_blank"  style="color: aquamarine;" onclick="linkVisited('youtube')" >Youtube</a></h5>
+                                    <h5>Source: <a href="https://www.youtube.com/watch?v=7uxF9CsxW88" target="_blank"  style="color: coral;" onclick="linkVisited('youtube')" >Youtube</a></h5>
                                     <span id="youtube"></span>
                                 </td>
                                 <td>
                                     <p><h3>Explore the various genres here.</h3></p>
                                     <iframe src="https://everynoise.com/" frameborder="0" style="width: 39.0625vw; height: 21.875vw;">Sorry, you cannot access this website.</iframe>
-                                    <h5>Link: <a href="https://everynoise.com/" target="_blank" style="color: aquamarine;" onclick="linkVisited('site')">Every Noise at Once</a></h5>
+                                    <h5>Link: <a href="https://everynoise.com/" target="_blank" style="color: coral;" onclick="linkVisited('site')">Every Noise at Once</a></h5>
                                     <span id="site"></span>
                                 </td>
                             </tr>
@@ -188,5 +190,19 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("light");
+                if(document.body.classList.contains("light")){
+                    icon.src= "img/dark1.png";
+                    }
+                else{
+                        icon.src = "img/light.png";
+                    }
+                }           
+        </script>
+
     </body>
 </html>
