@@ -2,6 +2,9 @@
   --primary-color: rgba(0, 0, 0, 0.82);
   --secondary-color: #fff;
   --color1: rgba(0, 0, 0, 0.82);
+  --op1: 0.82;
+  --op2: 0.9;
+  --op3: 0.85;
 }
 body, html{
   font-family:"Lato", sans-serif;
@@ -22,22 +25,22 @@ body, html{
 .bimg1{
   background-image:url('img/bg1.jpg');
   min-height:100%;
-  opacity:0.82;
+  opacity:var(--op1);
 }
 .bimg2{
   background-image:url('img/bg2.jpg');
   min-height:31.25vw;
-  opacity: 0.9;
+  opacity:var(--op2);
 }
 .bimg3{
   background-image:url('img/bg3.jpg');
   min-height:31.25vw;
-  opacity: 0.85;
+  opacity:var(--op3);
 }
 .bimg4{
   background-image:url('img/bg4.jpg');
   min-height:31.25vw;
-  opacity: 0.85;
+  opacity:var(--op3);
 }
 .btext{
   position:absolute;
@@ -69,7 +72,7 @@ section{
   display: inline-block;
   width: 0.15625vw;
   height: 2.22vw;
-  background-color: var(--secondary-color);
+  background-color: #fff;
   margin-left:  0.4vw;
   animation: blink .6s linear infinite alternate;
 }
@@ -104,4 +107,7 @@ main img {
   --primary-color: aliceblue;
   --secondary-color: rgb(37, 37, 37);
   --color1: #b2e5ed;
+  --op1:0.78;
+  --op2:0.85;
+  --op3:0.8;
 }
