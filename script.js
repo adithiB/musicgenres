@@ -34,7 +34,7 @@ function typingAction(sentence, clicked_id){
 }
 
 function linkVisited(clicked_id) {
-  document.getElementById(clicked_id).innerHTML="<p style='text-decoration: none; color: skyblue; font-size: 1.01vw; font-style: italic; font-weight: lighter;'>You have visited this link</p>"
+  document.getElementById(clicked_id).innerHTML="<p style='text-decoration: none; color: violet; font-size: 1.01vw; font-style: italic; font-weight: lighter;'>You have visited this link</p>"
 }
 
 function type(sentence, clicked_id, i=0) {
